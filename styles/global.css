@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
+html {
+    
+    --black:#31333d;
+    --green-light:#32BF84; 
 
+    font-size: 62.5%;
+}
 
 
 

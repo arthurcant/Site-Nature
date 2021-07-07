@@ -1,3 +1,195 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+} 
+
+body {
+    padding-bottom: 600px;
+}
+
+#bar-black{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5.5rem;
+    background-color: #31333d;
+    border: none;
+}
+
+#border-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 22rem;
+    height: 2rem;
+    padding: 1rem;
+    margin-right: 10rem;
+    background: #4a4d55;
+}
+
+#search {
+    background: none;
+    font-size: 1.8rem;
+    color: white;
+    outline: none;
+    border: none;
+    width: 15rem;
+}
+
+#search::placeholder {
+    color: white;
+}
+
+/* icons */
+
+#icons {
+    margin-right: 5rem;
+}
+
+#icons-images {
+    display: flex;
+
+}
+
+#icons-images li {
+    margin-right: 1rem;
+    clip-path: circle(50% at 50% 50%);
+    background-color: green;
+}
+
+.image-photo {
+    height: 2rem;
+}
+
+#parent-body-menu {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+#son-body-menu {
+    display: flex;
+    flex-direction: row;
+    min-width: 90rem;
+}
+
+#son-body-menu ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#son-body-menu ul li{
+    margin-left: 0rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+    transition: .1s;
+    cursor: pointer;
+}
+
+#son-body-menu ul li:hover {
+    background-color:var(--green-light);
+}
+
+#son-body-menu .fist-button {
+    background-color:var(--green-light);
+}
+
+#logo {
+    width: 10rem;
+    height: 10rem;
+}
+
+#information span:nth-child(1){
+    font-size: 1.7rem;
+    color: blue;
+}
+
+#information span:nth-child(3) {
+    color: black;
+    font-size: 1.3rem;
+}
+
+#fild-images {
+	background-image:url('../asserts/juices.jpg');
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: contain;
+    width: auto;
+    height: 1000px;
+}
+
+/* section below */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    display: flex;
+    width: 110rem;
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;  
+}
+
+#category {
+    display: flex;
+    flex-direction: column;
+    flex: 0;    
+    
+}
+
+.category-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.titles-sales {
+    color: var(--green-light);
+    margin: 0 1rem;
+}
+
+.lines, .lines02 {
+    align-self: center;
+    height: .2rem;
+    background-color: gainsboro;
+}
+
+.lines {
+    width: 10rem;
+}
+
+.lines02 {
+    width: 35rem;
+}
+
+#products {
+    margin-left: 1rem;
+    flex: 3;
+}
+
+.product-title {
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
 
