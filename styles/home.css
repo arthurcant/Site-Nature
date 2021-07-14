@@ -17,7 +17,6 @@ html {
 }
 
 body {
-    padding-bottom: 600px;
     background-color: none;
 }
 
@@ -169,7 +168,7 @@ body {
 
 #titles {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
 }
 
 #category {
@@ -190,7 +189,7 @@ body {
 
 .titles-sales {
     color: var(--green-light);
-    margin: 0 1rem;
+    margin: 0 .6rem;
 }
 
 .list01 {
@@ -330,6 +329,7 @@ body {
 .pluss-white {
     display: flex;
     justify-content: center;
+    margin-right: .5rem;
     min-width: 1rem;
     min-height: .3rem;
     background-color: green;
@@ -449,7 +449,7 @@ footer {
 
 
     .category-title div:nth-child(1) {
-        margin-right: 1rem;
+        margin-left: .5rem;
     }
 
     .lines {
@@ -548,7 +548,7 @@ footer {
 
 
     .category-title div:nth-child(1) {
-        margin-right: 1rem;
+        margin-left: .6rem;
     }
 
     .lines {
@@ -573,7 +573,7 @@ footer {
         flex-direction: column;
         margin-right: 1rem;
         margin-bottom: 1rem;
-        width: 41%;
+        width: 60%;
         height: 35rem;
         border: 1px solid rgba(0, 0, 0, .2);
     }
