@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Style sheet -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/home.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <header>
         <nav>
-            
+
             <div id="bar-black">
                 <div id="icons">
-                    <ul id ="icons-images">
-                        <li class="image-icon"><img src="asserts/icons/facebook.png" alt="Icon's facebook" class="image-photo"></li>
-                        <li class="image-icon"><img src="asserts/icons/instagram.png" alt="Icon's instagram" class="image-photo"></li>
-                        <li class="image-icon"><img src="asserts/icons/twitter.png" alt="Icon's twitter" class="image-photo"></li>
+                    <ul id="icons-images">
+                        <li class="image-icon"><img src="images/icons/facebook.png" alt="Icon's facebook"
+                                class="image-photo"></li>
+                        <li class="image-icon"><img src="images/icons/instagram.png" alt="Icon's instagram"
+                                class="image-photo"></li>
+                        <li class="image-icon"><img src="images/icons/twitter.png" alt="Icon's twitter"
+                                class="image-photo"></li>
                     </ul>
                 </div>
                 <div id="border-search">
                     <input type="text" id="search" placeholder="Search...">
                 </div>
             </div>
+
+            <div id="area-menu-desktop">
         
-            <div id="parent-body-menu">
-                <div id="son-body-menu">
+                <div id="photo-logo">
+                    <img src="images/logo.png" alt="Logo natureza" id="logo">
+                </div>
 
-                    <div>
-                        <img src="asserts/logo.png" alt="Logo natureza" id="logo">
-                    </div>
-
-                    <ul>
+                <ul id="menu-mobile" onclick="mobile_effect()">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
+                <div id="area-desktop">
+                    <ul id="menu-desktop">
                         <li class="fist-button">HOME</li>
                         <li>HOME</li>
                         <li>HOME</li>
@@ -45,37 +62,47 @@
                         <li>HOME</li>
                         <li>HOME</li>
                     </ul>
-
-                    <div id="information">
-                        <span>	&#x1F4DE;87827128</span><br>
-                        <span>Arthurbig19@gmail.com</span>
-                    </div>
-                
                 </div>
+
             </div>
         </nav>
     </header>
+
     <div id="fild-images"></div>
 
     <section id="geral">
         <div class="conteiner">
-           
-            <div id="category">           
+
+            <div id="category">
                 <div class="category-title">
                     <div class="lines"></div>
                     <h2 class="titles-sales">Categorias</h2>
                     <div class="lines"></div>
                 </div>
 
-                <div id="category-itens">
-                    <ul class="list01">
-                        <li>temperos</li>
-                        <li>evas</li>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul>
-                </div>
-
+                    <div class="center">
+                        <div id="category-itens">
+                            <ul class="list01">
+                                <li onclick="ClosePlus(0)">Temperos <span id="plus01">+</span></li>
+                                <div class="sub-menu-itens">
+                                    <ul class="list01">
+                                        <li>azul</li>
+                                        <li>Roxo</li>
+                                        <li>Vermelho</li>
+                                    </ul>
+                                </div>
+                                <li onclick="ClosePlus(1)">Evas <span id="plus02">+</span></li>
+                                <div class="sub-menu-itens">
+                                    <ul class="list01">
+                                        <li>Verdes</li>
+                                        <li>Vermelho</li>
+                                    </ul>
+                                </div>
+                                <li>Madeira</li>
+                                <li>Pós</li>
+                            </ul>
+                        </div>
+                    </div>    
             </div>
 
             <div id="products">
@@ -84,32 +111,200 @@
                     <h2 class="titles-sales">titles-sales</h2>
                     <div class="lines02"></div>
                 </div>
+
+                <section id="product-show">
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="posts">
+                        <div>
+                            <div class="imgs">
+                                <img src="images/produto.jpg" class="imgs-posts" alt="">
+                            </div>
+                            <div class="infor">
+                                <span class="price">$100</span>
+                                <span class="descrition">Temperos para cozinhar</span>
+                            </div>
+                            <button class="btn">Adicionar no carrinho</button>
+                        </div>
+
+                        <div class="espace">
+                            <div class="area-option">
+                                <div class="options01">
+                                    <div class="pluss-white"><span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar a lista de desejos</span>
+                                </div>
+
+                                <div class="options02">
+                                    <div class="pluss-white"> <span class="pluss">+</span></div> <span
+                                        class="infor_opition">Adicionar para comparar</span>
+                                </div>
+                            </div>
+                        </div>
+                
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="area-footer">  
+            
+            <div id="network">
+                <a href="https://github.com/arthurcant?tab=repositories"><img src="images/github.png" alt="Icone do github" id="git"></a>
+                <a href="https://www.linkedin.com/in/arthur-cavalcante-8a841b172/"><img src="images/linkedin.png" alt="Icone do linkedin"></a>
             </div>
 
+            <div id="copy-right" style="color: white;">
+               <span >Coded by Arthur Cavalcante.</span>
+            </div>
+                      
+            <div id="area-cash">
+                <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</div>
+                <a href='https://pt.pngtree.com/so/folha-clipart'>folha clipart png de pt.pngtree.com</a> &nbsp;&nbsp;
+            </div>    
         </div>
 
-    </section>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="javascript/interact.js"></script>
 
 </body>
 </html>
